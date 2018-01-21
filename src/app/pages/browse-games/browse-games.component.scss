@@ -1,0 +1,115 @@
+@import "~bootswatch/dist/journal/variables";
+
+$card-user-container-margin-bottom: 1rem;
+$card-user-container-radius: 50%;
+$card-user-container-background: $white;
+$card-user-container-color: $black;
+$card-user-container-image-size: 10rem;
+
+.card-game-container {
+  margin-bottom: $card-user-container-margin-bottom;
+  background-color: $card-user-container-background;
+  color: $black;
+  overflow: hidden;
+  padding: .25rem;
+  width:24%;
+  min-width:400px;
+  border-radius: 5px;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+  .card-game-container:after, .card-game-container:before{
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+   } 
+
+  .card-game-avatar {
+    .game-image {
+      display: block;
+      margin: auto;
+      border-radius: 50%;
+      background-color: $light;
+      width: $card-user-container-image-size;
+      height: $card-user-container-image-size;
+      padding: 1rem;
+      color: $info;
+      font-size:5rem;
+      text-align: center;
+      -webkit-transition: color 2s;
+      -moz-transition:    color 2s;
+      -ms-transition:     color 2s;
+      -o-transition:      color 2s;
+      transition:         color 2s;
+    }
+    .game-image:hover{
+        background-color: $info;
+        color:$light;
+    }
+  }
+
+  .card-game-bio {
+    padding: 1rem;
+    text-align: center;
+
+    h4{
+      text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    }
+
+    .location {
+      display: inline-block;
+      margin: 0 rem-calc(15);
+      color: $secondary;
+      font-size: rem-calc(14);
+    }
+
+    .location-icon,
+    .location-text {
+      display: inline-block;
+      padding: 0 rem-calc(5);
+    }
+  }
+
+  .card-game-rating {
+    background: $light;
+    padding: .5rem;
+    text-align: center;
+
+    .star {
+        position: relative;  
+        display: inline-block;
+        font-size: 1.5rem;
+        color: #d3d3d3;
+      }
+      .full {
+        color: orange;
+      }
+      .half {
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        color: orange;
+      }
+  }
+  .card-game-choice {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+.jumbotron{
+  background-color: #eeeeee47;
+}
+
