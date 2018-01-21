@@ -9,7 +9,8 @@ import 'rxjs/add/operator/catch';
 export class RemotesService {
 
 
-  url:string = 'http://starlord.hackerearth.com/gamesarena';
+  //url:string = 'http://starlord.hackerearth.com/gamesarena';
+  url:string = 'https://api.myjson.com/bins/14lc8p';
 
   constructor(private _http:Http) { }
 

@@ -19,7 +19,7 @@ export class BrowseGamesComponent implements OnInit {
   itemsPerPage: number = 10;
   page: number = 1;
   list: Game[];
-  searchTerm: string;
+  searchText: string;
 
   constructor(private rs: RemotesService) {
     this.gameList = [];
@@ -54,7 +54,7 @@ export class BrowseGamesComponent implements OnInit {
         this.gameList.sort((g1, g2) => g1.score - g2.score);
       }
     }
-    else if(sortby == "score"){
+    else if(sortby == "title"){
       if (order == -1) {  // descending order
         this.gameList.sort((g1, g2) => {
           if (g1.title < g2.title) {
